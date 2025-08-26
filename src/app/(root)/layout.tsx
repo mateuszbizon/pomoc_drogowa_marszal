@@ -1,4 +1,5 @@
 import CompanyInfo from "@/components/common/CompanyInfo";
+import Nav from "@/components/common/Nav";
 
 export default function RootLayout({
   children,
@@ -8,6 +9,7 @@ export default function RootLayout({
   return (
     <>
         <CompanyInfo />
+        <Nav />
         <main>
             {children}
         </main>

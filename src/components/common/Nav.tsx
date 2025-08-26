@@ -11,6 +11,7 @@ import useScroll from '@/lib/hooks/useScroll'
 import NavCard from '../cards/NavCard'
 import Image from 'next/image'
 import { LOGO } from '@/constants/images'
+import NavMobile from './NavMobile'
 
 function Nav() {
     const { isScrolled } = useScroll({ scrollAmount: 50 })
@@ -42,9 +43,9 @@ function Nav() {
                         </Link>
                     </Button>
                 </div>
-                {/* <div className='lg:hidden'>
+                <div className='lg:hidden'>
                     <NavMobile />
-                </div> */}
+                </div>
             </div>
         </Container>
     </nav>

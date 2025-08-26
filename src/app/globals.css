@@ -13,6 +13,7 @@
   --color-ring: var(--ring);
   --color-border: var(--border);
   --spacing-section-padding: var(--section-padding);
+  --spacing-company-info-height: var(--company-info-height);
 }
 
 :root {
@@ -27,6 +28,7 @@
   --ring: #2601df;
   --border: #2601df;
   --section-padding: 5rem;
+  --company-info-height: 3rem;
 }
 
 @layer base {

@@ -1,3 +1,5 @@
+import CompanyInfo from "@/components/common/CompanyInfo";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -5,6 +7,7 @@ export default function RootLayout({
 }>) {
   return (
     <>
+        <CompanyInfo />
         <main>
             {children}
         </main>

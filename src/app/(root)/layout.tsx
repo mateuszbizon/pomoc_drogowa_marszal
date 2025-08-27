@@ -1,4 +1,5 @@
 import CompanyInfo from "@/components/common/CompanyInfo";
+import Footer from "@/components/common/Footer";
 import Nav from "@/components/common/Nav";
 
 export default function RootLayout({
@@ -13,6 +14,7 @@ export default function RootLayout({
         <main>
             {children}
         </main>
+        <Footer />
     </>
   );
 }

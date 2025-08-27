@@ -13,7 +13,7 @@ const buttonVariants = cva(
           "bg-primary text-white hover:bg-primary-hover",
         secondary:
           "bg-secondary text-foreground hover:bg-yellow",
-        link: "text-primary text-primary-hover",
+        link: "text-primary hover:text-primary-hover",
       },
        size: {
         default: "px-6 py-3",

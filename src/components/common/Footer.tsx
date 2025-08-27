@@ -87,10 +87,10 @@ function Footer() {
                             </Button>
                         </div>
                         <div>
-                            <p className='flex gap-2 justify-center md:justify-start'><MapPin /> {LOCATION}</p>
+                            <p className='flex gap-2 justify-center md:justify-start font-medium'><MapPin /> {LOCATION}</p>
                         </div>
                         <div>
-                            <p className='flex gap-2 justify-center md:justify-start'><MapPin /> NIP: {NIP}</p>
+                            <p className='flex gap-2 justify-center md:justify-start font-medium'><MapPin /> NIP: {NIP}</p>
                         </div>
                         {/* <div className='flex justify-center lg:justify-start items-center gap-3 text-foreground'>
                             <Button size={"icon"} asChild>

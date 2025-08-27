@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Contact from "@/components/sections/Contact";
 import Gallery from "@/components/sections/Gallery";
 import Hero from "@/components/sections/Hero";
 import Questions from "@/components/sections/Questions";
@@ -14,6 +15,7 @@ export default function Home() {
         <Reviews />
         <Questions />
         <Gallery />
+        <Contact />
     </>
   );
 }

@@ -1,2 +1,5 @@
 export const PHONE = '534 796 729'
 export const PHONE2 = '693 641 419'
+export const EMAIL = 'bmarszal659@gmail.com'
+export const LOCATION = '59-900 Zgorzelec, Jerzmanki 22 '
+export const NIP = '6131254388'

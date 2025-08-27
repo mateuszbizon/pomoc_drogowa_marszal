@@ -22,3 +22,8 @@ export type Review = {
 	name: string;
 	content: string;
 }
+
+export type AccordionItem = {
+    title: string
+    content: string
+}

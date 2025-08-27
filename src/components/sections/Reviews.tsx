@@ -20,7 +20,7 @@ function Reviews() {
         <Container>
             <HeadingInfo title='Opinie' />
             <h2 className='heading2 text-center heading-margin-bottom'>
-                Opinie serwisu mobilnego
+                Opinie o mobilnym serwisie TIR Zgorzelec
             </h2>
             <Carousel
                 opts={{

@@ -3,7 +3,7 @@ import Shadow from '../ui/shadow'
 import Container from '../ui/container'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-import { PHONE2 } from '@/constants'
+import { HERO_SUBTITLE, PHONE2 } from '@/constants'
 
 function Hero() {
   return (
@@ -11,9 +11,9 @@ function Hero() {
         <Shadow />
         <Container>
             <div className='gap-y-8 h-full flex flex-col justify-center text-center'>
-                <h1 className='heading1 lg:leading-18'><span className='text-secondary'>Serwis Mobilny</span> <br /><span className='text-red'>TIR</span> <br />Zgorzelec - Jędrzychowice</h1>
+                <h1 className='heading1 lg:leading-18'><span className='text-secondary'>Mobilny Serwis</span> <br /><span className='text-red'>TIR</span> <br />Zgorzelec - Jędrzychowice</h1>
                 <p className='bigger-text'>
-                    Usługi naprawy samochodów ciężarowych i osobowych na terenie Polski oraz UE w trybie mobilnym i stacjonarnym. Auto laweta
+                    {HERO_SUBTITLE}
                 </p>
                 <div className='flex gap-5 flex-wrap justify-center'>
                     <Button size={"lg"} className='text-lg' asChild>

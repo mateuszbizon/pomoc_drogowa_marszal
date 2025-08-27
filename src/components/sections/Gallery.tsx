@@ -13,7 +13,7 @@ function Gallery() {
     <section className='bg-white py-section-padding'>
         <Container>
             <HeadingInfo title='Galeria zdjęć' />
-            <h2 className='heading2 text-center heading-margin-bottom'>Zdjęcia z pomocy drogowej</h2>
+            <h2 className='heading2 text-center heading-margin-bottom'>Mobilny serwis TIR Zgorzelec w akcji</h2>
             <LightBoxGallery images={galleryImages} />
             <div className='flex justify-center'>
                 <Button size={"lg"} className='mt-10' asChild>

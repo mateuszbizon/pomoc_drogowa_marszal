@@ -9,7 +9,7 @@ function About() {
     <section className='bg-white py-section-padding'>
         <Container>
             <HeadingInfo />
-            <h2 className='heading2 text-center heading-margin-bottom'>Serwis mobilny TIR Zgorzelec - Jędrzychowice</h2>
+            <h2 className='heading2 text-center heading-margin-bottom'>Mobilny serwis TIR Zgorzelec – kim jesteśmy?</h2>
             <div className='grid lg:grid-cols-2 gap-10 lg:gap-5'>
                 <div>
                     <figure className='relative w-full aspect-video max-w-[600px] mx-auto rounded-2xl overflow-hidden'>
@@ -17,7 +17,7 @@ function About() {
                     </figure>
                 </div>
                 <div className='space-y-10'>
-                    <h3 className='bigger-text font-black text-center'>Pomoc Drogowa Zgorzelec - Jędrzychowice 24 <br /><span className='text-primary'>Bogdan Marszał</span></h3>
+                    <h3 className='bigger-text font-black text-center'>Całodobowy mobilny serwis TIR w Zgorzelcu i okolicy <br /><span className='text-primary'>Bogdan Marszał</span></h3>
                     <div className='space-y-8 font-black'>
                         <div className='flex gap-4 items-center'>
                             <div>

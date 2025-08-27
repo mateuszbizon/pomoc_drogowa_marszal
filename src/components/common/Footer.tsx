@@ -2,7 +2,7 @@ import React from 'react'
 import Container from '../ui/container'
 import Link from 'next/link'
 import { Button } from '../ui/button'
-import { EMAIL, LOCATION, NIP, PHONE, PHONE2 } from '@/constants'
+import { EMAIL, HERO_SUBTITLE, LOCATION, NIP, PHONE, PHONE2 } from '@/constants'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { NAV_ITEMS, SERVICE_ITEMS } from '@/constants/navItems'
 import Image from 'next/image'
@@ -19,7 +19,7 @@ function Footer() {
                     </figure>
                     <p className='md:text-lg'>
                         <em>
-                            Usługi naprawy samochodów ciężarowych i osobowych na terenie Polski oraz UE w trybie mobilnym i stacjonarnym. Auto laweta
+                            {HERO_SUBTITLE}
                         </em>
                     </p>
                 </div>

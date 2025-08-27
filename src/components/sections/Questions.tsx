@@ -9,7 +9,7 @@ function Questions() {
     <section className='py-section-padding'>
         <Container>
             <HeadingInfo title='Najczęściej zadawane pytania' />
-            <h2 className='heading2 text-center heading-margin-bottom'>Pytania o serwis mobilny TIR</h2>
+            <h2 className='heading2 text-center heading-margin-bottom'>FAQ – mobilny serwis TIR Zgorzelec i pomoc drogowa</h2>
             <Accordion type="single" className='mx-auto max-w-[800px]' collapsible>
                 {QUESTIONS.map(item => (
                     <AccordionItem value={item.title} key={item.title}>
@@ -19,12 +19,6 @@ function Questions() {
                         </AccordionContent>
                     </AccordionItem>
                 ))}
-                {/* <AccordionItem value={"item1"}>
-                    <AccordionTrigger>a</AccordionTrigger>
-                    <AccordionContent>
-                        a
-                    </AccordionContent>
-                </AccordionItem> */}
             </Accordion>
         </Container>
     </section>

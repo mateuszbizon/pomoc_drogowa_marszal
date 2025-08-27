@@ -1,4 +1,5 @@
 import About from "@/components/sections/About";
+import Gallery from "@/components/sections/Gallery";
 import Hero from "@/components/sections/Hero";
 import Questions from "@/components/sections/Questions";
 import Reviews from "@/components/sections/Reviews";
@@ -12,6 +13,7 @@ export default function Home() {
         <Services />
         <Reviews />
         <Questions />
+        <Gallery />
     </>
   );
 }

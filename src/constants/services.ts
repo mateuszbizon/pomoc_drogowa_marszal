@@ -58,3 +58,17 @@ export const AUTO_LAWETA_ZGORZELEC_ITEMS = [
     "Samochody dostawcze",
     "Transport maszyn budowlanych",
 ]
+
+export const SERWIS_KLIMATYZACJI_ZGORZELEC_ABOUT = [
+    "Diagnostyka klimatyzacji",
+    "Uzupełnianie czynnika chłodzącego",
+    "Dezynfekcja i czyszczenie układu",
+    "Szybka naprawa w trasie lub stacjonarnie",
+]
+
+export const SERWIS_KLIMATYZACJI_ZGORZELEC_ITEMS = [
+    "Napełnianie czynnika chłodzącego",
+    "Uzupełnianie odczynnika",
+    "Sprawdzenie szczelności układu chłodzenia",
+    "Wymiana filtrów kabinowych",
+]

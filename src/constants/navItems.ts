@@ -35,22 +35,22 @@ export const SERVICE_ITEMS: NavLink[] = [
     },
     {
         label: "Pomoc drogowa",
-        href: "/uslugi/pomoc-drogowa"
+        href: "/uslugi/pomoc-drogowa-zgorzelec"
     },
     {
         label: "Naprawa kół",
-        href: "/uslugi/naprawa-kol"
+        href: "/uslugi/naprawa-kol-zgorzelec"
     },
     {
         label: "Auto laweta",
-        href: "/uslugi/auto-laweta"
+        href: "/uslugi/auto-laweta-zgorzelec"
     },
     {
         label: "Serwis klimatyzacji",
-        href: "/uslugi/serwis-klimatyzacji"
+        href: "/uslugi/serwis-klimatyzacji-zgorzelec"
     },
     {
         label: "Blacharstwo",
-        href: "/uslugi/blacharstwo"
+        href: "/uslugi/blacharstwo-zgorzelec"
     },
 ]

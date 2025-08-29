@@ -25,7 +25,7 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/pomoc-drogowa"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/pomoc-drogowa-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <Siren className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Pomoc drogowa</h3>
@@ -37,7 +37,7 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/naprawa-kol"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/naprawa-kol-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <Cog className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Naprawa kół</h3>
@@ -49,7 +49,7 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/auto-laweta"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/auto-laweta-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <CarFront className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Auto laweta</h3>
@@ -61,7 +61,7 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/serwis-klimatyzacji"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/serwis-klimatyzacji-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <Fan className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Serwis klimatyzacji</h3>
@@ -73,7 +73,7 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/blacharstwo"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/blacharstwo-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <Hammer className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Blacharstwo</h3>

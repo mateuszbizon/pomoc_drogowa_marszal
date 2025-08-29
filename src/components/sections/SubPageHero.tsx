@@ -28,6 +28,11 @@ function SubPageHero({ title = "O nas", description = "Poznaj nas bliżej i spra
                             Zadzwoń do nas
                         </Link>
                     </Button>
+                    <Button size={"lg"} variant={"secondary"} className='text-lg' asChild>
+                        <Link href={`/uslugi`}>
+                            Poznaj ofertę
+                        </Link>
+                    </Button>
                 </div>
             </div>
         </Container>

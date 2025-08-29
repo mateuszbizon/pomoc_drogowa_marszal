@@ -29,3 +29,17 @@ export const POMOC_DROGOWA_ZGORZELEC_ITEMS = [
     "Naprawa zawieszenia samochodów osobowych, dostawczych i ciężarowych",
     "Mobilne naprawy drobnych usterek"
 ]
+
+export const NAPRAWA_KOL_ZGORZELEC_ABOUT = [
+    "Wymiana opon ciężarowych i dostawczych",
+    "Wulkanizacja w terenie",
+    "Wyważanie i sprawdzanie felg",
+    "Obsługa całodobowa"
+]
+
+export const NAPRAWA_KOL_ZGORZELEC_ITEMS = [
+    "Wymiana kół na miejscu",
+    "Wulkanizacja uszkodzonych opon",
+    "Wyważanie kół",
+    "Diagnoza uszkodzonych felg"
+]

@@ -43,3 +43,18 @@ export const NAPRAWA_KOL_ZGORZELEC_ITEMS = [
     "Wyważanie kół",
     "Diagnoza uszkodzonych felg"
 ]
+
+export const AUTO_LAWETA_ZGORZELEC_ABOUT = [
+    "Oferujemy usługi auto lawety dla pojazdów ciężarowych i osobowych",
+    "Usługi całodobowe na terenie Polski i UE",
+    "Szybki czas dojazdu",
+    "W przypadku poważnych awarii, zapewniamy transport pojazdu do wybranego warsztatu lub miejsca docelowego"
+]
+
+export const AUTO_LAWETA_ZGORZELEC_ITEMS = [
+    "Pojazdy ciężarowe",
+    "Samochody osobowe",
+    "Busy",
+    "Samochody dostawcze",
+    "Transport maszyn budowlanych",
+]

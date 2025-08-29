@@ -13,7 +13,7 @@ function NavCard({ item }: NavCardProps) {
     <>
         {item.isLink ? (
             <NavigationMenuLink  asChild>
-                <Button className='py-2 px-6 text-white hover:bg-primary text-lg rounded-2xl' variant={"link"} asChild>
+                <Button className='py-2 px-6 text-white hover:bg-primary xl:text-lg rounded-2xl' variant={"link"} asChild>
                     <Link href={item.href}>
                         {item.label}
                     </Link>

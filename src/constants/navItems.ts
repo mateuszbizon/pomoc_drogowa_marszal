@@ -30,8 +30,8 @@ export const NAV_ITEMS: NavItem[] = [
 
 export const SERVICE_ITEMS: NavLink[] = [
     {
-        label: "Serwis mobilny TIR",
-        href: "/uslugi/serwis-mobilny-tir"
+        label: "Mobilny serwis TIR",
+        href: "/uslugi/mobilny-serwis-tir"
     },
     {
         label: "Pomoc drogowa",

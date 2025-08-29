@@ -17,7 +17,7 @@ function SubPageHero({ title = "O nas", description = "Poznaj nas bliżej i spra
         <Container>
             <div className='gap-8 h-full flex flex-col justify-center text-center'>
                 <h1 className='heading1 lg:leading-18'>
-                    {title} <br />Mobilny Serwis TIR Zgorzelec
+                    {title}
                 </h1>
                 <p className='bigger-text'>
                     {description}

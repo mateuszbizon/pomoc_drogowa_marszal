@@ -13,7 +13,7 @@ function Services() {
             <HeadingInfo title='Usługi' />
             <h2 className='heading2 text-center heading-margin-bottom'>Usługi mobilnego serwisu w Zgorzelcu i okolicy</h2>
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-x-5 gap-y-10'>
-                <Link href={"/uslugi/serwis-mobilny-tir"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/mobilny-serwis-tir"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
                         <Truck className='text-primary size-10' />
                         <h3 className='bigger-text font-bold'>Mobilny serwis TIR</h3>

@@ -33,7 +33,7 @@ function Footer() {
 
                                 return (
                                     <li key={item.label}>
-                                        <Button className='text-white hover:text-white/50' size={"link"} variant={"link"} asChild>
+                                        <Button className='text-white hover:text-white/70' size={"link"} variant={"link"} asChild>
                                             <Link href={item.href}>
                                                 {item.label}
                                             </Link>

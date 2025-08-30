@@ -72,3 +72,18 @@ export const SERWIS_KLIMATYZACJI_ZGORZELEC_ITEMS = [
     "Sprawdzenie szczelności układu chłodzenia",
     "Wymiana filtrów kabinowych",
 ]
+
+export const POMOC_DROGOWA_A4_ABOUT = [
+    "Błyskawiczna reakcja na zgłoszenie – dostępni 24/7",
+    "Pomoc dla samochodów osobowych, busów i ciężarówek",
+    "Mobilne naprawy na trasie i autostradzie A4",
+    "Doświadczony zespół z wieloletnią praktyką w branży"
+]
+
+export const POMOC_DROGOWA_A4_ITEMS = [
+    "Wsparcie dla pojazdów osobowych, dostawczych i ciężarowych",
+    "Awaryjne uruchamianie pojazdów",
+    "Wymiana kół i naprawa ogumienia na miejscu",
+    "Dowóz paliwa na trasie",
+    "Podstawowe naprawy mechaniczne bezpośrednio na drodze"
+]

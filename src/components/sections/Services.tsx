@@ -1,7 +1,7 @@
 import React from 'react'
 import Container from '../ui/container'
 import HeadingInfo from '../ui/heading-info'
-import { CarFront, Cog, Fan, Hammer, Siren, Truck } from 'lucide-react'
+import { BusFront, CarFront, Cog, Fan, Siren, Truck } from 'lucide-react'
 import Link from 'next/link'
 import { Button } from '../ui/button'
 import { PHONE2 } from '@/constants'
@@ -73,12 +73,12 @@ function Services() {
                         </p>
                     </div>
                 </Link>
-                <Link href={"/uslugi/blacharstwo-zgorzelec"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
+                <Link href={"/uslugi/pomoc-drogowa-a4"} className='p-5 rounded-2xl hover:bg-white hover:shadow-xl transition duration-300'>
                     <div className='flex flex-col items-center gap-5 text-center'>
-                        <Hammer className='text-primary size-10' />
-                        <h3 className='bigger-text font-bold'>Blacharstwo</h3>
+                        <BusFront className='text-primary size-10' />
+                        <h3 className='bigger-text font-bold'>Pomoc drogowa A4</h3>
                         <p className='little-bigger-text font-medium'>
-                            Naprawy blacharskie. Przetarcia, wgniecenia oraz przygotowanie do malowania.
+                            Pomoc i wsparcie na autostradzie A4 o każdej porze dnia i nocy.
                         </p>
                         <p className='little-bigger-text text-primary font-bold'>
                             Dowiedz się więcej {">>"}

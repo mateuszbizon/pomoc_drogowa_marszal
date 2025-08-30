@@ -55,7 +55,7 @@ export const SERVICE_ITEMS: NavLink[] = [
         href: "/uslugi/serwis-klimatyzacji-zgorzelec"
     },
     {
-        label: "Blacharstwo",
-        href: "/uslugi/blacharstwo-zgorzelec"
+        label: "Pomoc drogowa A4",
+        href: "/uslugi/pomoc-drogowa-a4"
     },
 ]

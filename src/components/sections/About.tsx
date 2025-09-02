@@ -1,12 +1,39 @@
+"use client"
+
 import React from 'react'
 import Container from '../ui/container'
 import Image from 'next/image'
 import { ABOUT } from '@/constants/images'
 import HeadingInfo from '../ui/heading-info'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
 
 function About() {
+    useGSAP(() => {
+        const timeline = gsap.timeline({
+            scrollTrigger: {
+                trigger: "#about-content",
+                start: "top 40%",
+                once: true
+            }
+        })
+
+        timeline.fromTo(".about-list-item", {
+            opacity: 0,
+            y: 50
+        }, {
+            opacity: 1,
+            y: 0,
+            stagger: 0.3,
+            duration: 0.5,
+        })
+    }, [])
+
   return (
-    <section className='bg-white py-section-padding'>
+    <section id='about-content' className='bg-white py-section-padding'>
         <Container>
             <HeadingInfo />
             <h2 className='heading2 text-center heading-margin-bottom'>Mobilny serwis TIR Zgorzelec – kim jesteśmy?</h2>
@@ -19,25 +46,25 @@ function About() {
                 <div className='space-y-10'>
                     <h3 className='bigger-text font-black text-center'>Całodobowy mobilny serwis TIR w Zgorzelcu i okolicy <br /><span className='text-primary'>Bogdan Marszał</span></h3>
                     <ul className='space-y-8 font-black'>
-                        <li className='flex gap-4 items-center'>
+                        <li className='about-list-item flex gap-4 items-center'>
                             <div>
                                 <div className='size-6 rounded-full bg-primary'></div>
                             </div>
                             <p className='little-bigger-text'>24 h, "Non Stop"</p>
                         </li>
-                        <li className='flex gap-4 items-center'>
+                        <li className='about-list-item flex gap-4 items-center'>
                             <div>
                                 <div className='size-6 rounded-full bg-secondary'></div>
                             </div>
                             <p className='little-bigger-text'>Dojeżdżamy do każdego miejsca w Unii Europejskiej</p>
                         </li>
-                        <li className='flex gap-4 items-center'>
+                        <li className='about-list-item flex gap-4 items-center'>
                             <div>
                                 <div className='size-6 rounded-full bg-green'></div>
                             </div>
                             <p className='little-bigger-text'>Mobilny serwis samochodów osobowych oraz ciężarowych</p>
                         </li>
-                        <li className='flex gap-4 items-center'>
+                        <li className='about-list-item flex gap-4 items-center'>
                             <div>
                                 <div className='size-6 rounded-full bg-red'></div>
                             </div>

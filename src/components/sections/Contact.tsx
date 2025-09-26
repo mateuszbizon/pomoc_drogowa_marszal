@@ -6,6 +6,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import { Button } from '../ui/button'
 import Link from 'next/link'
 import { EMAIL, LOCATION, NIP, PHONE, PHONE2 } from '@/constants'
+import GoogleMap2 from '../ui/google-map2'
 
 function Contact() {
   return (
@@ -15,7 +16,7 @@ function Contact() {
             <h2 className='heading2 text-center heading-margin-bottom'>Skontaktuj się z nami</h2>
             <div className='flex flex-col md:flex-row gap-5 lg:gap-10'>
                 <div className='grow'>
-                    <GoogleMap />
+                    <GoogleMap2 />
                 </div>
                 <div className='w-full md:w-[400px] h-fit flex flex-col gap-10 items-center text-center rounded-2xl p-5 bg-primary text-white'>
                     <div className='flex flex-col items-center gap-3'>

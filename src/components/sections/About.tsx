@@ -62,13 +62,13 @@ function About() {
                             <div>
                                 <div className='size-6 rounded-full bg-green'></div>
                             </div>
-                            <p className='little-bigger-text'>Mobilny serwis samochodów osobowych oraz ciężarowych</p>
+                            <p className='little-bigger-text'>Mobilny serwis samochodów ciężarowych</p>
                         </li>
                         <li className='about-list-item flex gap-4 items-center'>
                             <div>
                                 <div className='size-6 rounded-full bg-red'></div>
                             </div>
-                            <p className='little-bigger-text'>Naprawy stacjonarne samochodów ciężarowych i osobowych</p>
+                            <p className='little-bigger-text'>Naprawy stacjonarne samochodów ciężarowych</p>
                         </li>
                     </ul>
                 </div>

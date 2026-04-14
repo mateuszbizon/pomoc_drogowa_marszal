@@ -105,7 +105,7 @@ function Footer() {
             </div>
             <div className='mt-section-padding flex flex-col sm:flex-row justify-between gap-3 items-center'>
                 <p>
-                    &copy; {new Date().getFullYear()} | <span className='font-semibold'>Pomoc Drogowa Zgorzelec</span>
+                    &copy; 2026 | <span className='font-semibold'>Pomoc Drogowa Zgorzelec</span>
                 </p>
                 <p>
                     <Button variant={"link"} size={"link"} className='text-white hover:text-white/70' asChild>

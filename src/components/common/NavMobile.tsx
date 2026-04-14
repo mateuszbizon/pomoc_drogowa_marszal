@@ -1,5 +1,5 @@
 import React from 'react'
-import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
 import { Button } from '../ui/button'
 import { Menu } from 'lucide-react'
 import { NAV_ITEMS } from '@/constants/navItems'
@@ -22,11 +22,13 @@ function NavMobile() {
                 {NAV_ITEMS.map(item => (
                     <li key={item.label}>
                         {item.isLink ? (
-                            <Button variant="link" className='text-foreground hover:text-foreground/70 text-lg' asChild>
-                                <Link href={item.href}>
-                                    {item.label}
-                                </Link>
-                            </Button>
+                            <SheetClose asChild>
+                                <Button variant="link" className='text-foreground hover:text-foreground/70 text-lg' asChild>
+                                    <Link href={item.href}>
+                                        {item.label}
+                                    </Link>
+                                </Button>
+                            </SheetClose>
                         ) : (
                             <ul>
                                 {item.menu.map(menuItem => (

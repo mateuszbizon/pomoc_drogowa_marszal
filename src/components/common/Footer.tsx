@@ -2,11 +2,13 @@ import React from 'react'
 import Container from '../ui/container'
 import Link from 'next/link'
 import { Button } from '../ui/button'
-import { EMAIL, HERO_SUBTITLE, LOCATION, NIP, PHONE, PHONE2 } from '@/constants'
+import { EMAIL, FACEBOOK, HERO_SUBTITLE, LOCATION, NIP, PHONE, PHONE2, TIKTOK } from '@/constants'
 import { Mail, MapPin, Phone } from 'lucide-react'
 import { NAV_ITEMS, SERVICE_ITEMS } from '@/constants/navItems'
 import Image from 'next/image'
 import { LOGO } from '@/constants/images'
+import Facebook from '../ui/icons/Facebook'
+import Tiktok from '../ui/icons/Tiktok'
 
 function Footer() {
   return (
@@ -92,19 +94,25 @@ function Footer() {
                         <div>
                             <p className='flex gap-2 justify-center md:justify-start font-medium'><MapPin /> NIP: {NIP}</p>
                         </div>
-                        {/* <div className='flex justify-center lg:justify-start items-center gap-3 text-foreground'>
-                            <Button size={"icon"} asChild>
-                                <Link href={INSTA} target='_blank' title='Instagram'>
-                                    <Instagram />
-                                    <span className='sr-only'>Instagram</span>
+                        <div className='flex justify-center lg:justify-start items-center gap-3 text-foreground'>
+                            <Button size={"icon"} variant={"secondary"} asChild>
+                                <Link href={FACEBOOK} target='_blank' title='Facebook'>
+                                    <Facebook />
+                                    <span className='sr-only'>Facebook</span>
                                 </Link>
                             </Button>
-                        </div> */}
+                            <Button size={"icon"} variant={"secondary"} asChild>
+                                <Link href={TIKTOK} target='_blank' title='TikTok'>
+                                    <Tiktok />
+                                    <span className='sr-only'>TikTok</span>
+                                </Link>
+                            </Button>
+                        </div>
                     </div>
                 </div>
             </div>
             <div className='mt-section-padding flex flex-col sm:flex-row justify-between gap-3 items-center'>
-                <p>
+                <p className='text-center'>
                     &copy; {new Date().getFullYear()} | <span className='font-semibold'>Pomoc Drogowa Zgorzelec</span>
                 </p>
                 <p>

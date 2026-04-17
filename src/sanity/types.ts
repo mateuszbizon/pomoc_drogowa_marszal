@@ -231,3 +231,39 @@ export type AllSanitySchemaTypes =
   | SanityAssetSourceData
   | SanityImageAsset
   | Geopoint;
+
+// Source: src/sanity/lib/queries.ts
+// Variable: GET_ALL_BLOGS_QUERY
+// Query: *[_type == "post"] | order(publishedAt desc) {        _id, publishedAt, title, slug, categories[]->, mainImage    }
+export type GET_ALL_BLOGS_QUERY_RESULT = Array<{
+  _id: string;
+  publishedAt: string | null;
+  title: string | null;
+  slug: Slug | null;
+  categories: Array<{
+    _id: string;
+    _type: "category";
+    _createdAt: string;
+    _updatedAt: string;
+    _rev: string;
+    title?: string;
+    slug?: Slug;
+    description?: string;
+  }> | null;
+  mainImage: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  } | null;
+}>;
+
+// Query TypeMap
+import "@sanity/client";
+declare module "@sanity/client" {
+  interface SanityQueries {
+    '\n    *[_type == "post"] | order(publishedAt desc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n': GET_ALL_BLOGS_QUERY_RESULT;
+  }
+}

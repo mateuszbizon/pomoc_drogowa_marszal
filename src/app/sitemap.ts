@@ -64,6 +64,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
       priority: 0.8,
     },
     {
+      url: `${baseUrl}blog`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}uslugi/mobilny-serwis-tir`,
       lastModified: new Date(),
       changeFrequency: 'monthly',

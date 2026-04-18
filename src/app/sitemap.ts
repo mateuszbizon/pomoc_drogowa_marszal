@@ -1,8 +1,25 @@
 import type { MetadataRoute } from 'next'
+import { getAllPosts } from '@/sanity/posts/getAllPosts'
+import { NAV_ITEMS } from '@/constants/navItems'
 
 const baseUrl = 'https://serwismobilnytirzgorzelec.pl/'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
+    const { posts } = await getAllPosts()
+
+    const postLinks = posts.map(post => ({
+        url: `${baseUrl}/${post.slug?.current}`,
+        lastModified: post.publishedAt ? new Date(post.publishedAt) : new Date(),
+        priority: 0.8,
+    }))
+
+    const navLinks = NAV_ITEMS.map(item => ({
+        url: item.isLink ? `${baseUrl}${item.href}` : "",
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.8,
+    }))
+
   return [
     {
       url: `${baseUrl}`,
@@ -47,6 +64,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}blog`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}uslugi/mobilny-serwis-tir`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
@@ -82,5 +105,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    ...postLinks
   ]
 }

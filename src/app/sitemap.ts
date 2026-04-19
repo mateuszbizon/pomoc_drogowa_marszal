@@ -1,8 +1,8 @@
 import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/sanity/posts/getAllPosts'
-import { NAV_ITEMS } from '@/constants/navItems'
+import { NAV_ITEMS, SERVICE_ITEMS } from '@/constants/navItems'
 
-const baseUrl = 'https://serwismobilnytirzgorzelec.pl/'
+const baseUrl = 'https://serwismobilnytirzgorzelec.pl'
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
     const { posts } = await getAllPosts()
@@ -13,8 +13,21 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
         priority: 0.8,
     }))
 
-    const navLinks = NAV_ITEMS.map(item => ({
-        url: item.isLink ? `${baseUrl}${item.href}` : "",
+    const navLinks = NAV_ITEMS.map(item => {
+        if (item.isLink) {
+            return {
+                url: item.isLink ? `${baseUrl}${item.href}` : "",
+                lastModified: new Date(),
+                changeFrequency: 'yearly',
+                priority: 0.8,
+            }
+        }
+
+        return
+    })
+
+    const serviceLinks = SERVICE_ITEMS.map(item => ({
+        url: `${baseUrl}${item.href}`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,
@@ -27,84 +40,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap>{
       changeFrequency: 'yearly',
       priority: 1,
     },
-    {
-      url: `${baseUrl}o-nas`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}faq`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}opinie`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}galeria`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}kontakt`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}blog`,
-      lastModified: new Date(),
-      changeFrequency: 'yearly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/mobilny-serwis-tir`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/pomoc-drogowa-zgorzelec`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/naprawa-kol-zgorzelec`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/auto-laweta-zgorzelec`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/serwis-klimatyzacji-zgorzelec`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}uslugi/pomoc-drogowa-a4`,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    ...postLinks
+    ...navLinks.filter((link): link is NonNullable<typeof link> => link !== undefined),
+    ...serviceLinks,
+    ...postLinks,
   ]
 }

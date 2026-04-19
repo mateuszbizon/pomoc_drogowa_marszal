@@ -17,7 +17,7 @@ export const NAV_ITEMS: NavItem[] = [
         href: "/opinie"
     },
     {
-        label: "Zadawane pytania",
+        label: "Pytania",
         isLink: true,
         href: "/faq"
     },
@@ -30,6 +30,11 @@ export const NAV_ITEMS: NavItem[] = [
         label: "Kontakt",
         isLink: true,
         href: "/kontakt"
+    },
+    {
+        label: "Blog",
+        isLink: true,
+        href: "/blog"
     },
 ]
 

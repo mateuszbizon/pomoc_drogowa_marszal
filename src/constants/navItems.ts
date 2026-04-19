@@ -17,11 +17,6 @@ export const NAV_ITEMS: NavItem[] = [
         href: "/opinie"
     },
     {
-        label: "Pytania",
-        isLink: true,
-        href: "/faq"
-    },
-    {
         label: "Galeria",
         isLink: true,
         href: "/galeria"

@@ -2,6 +2,8 @@ import AllBlogs from '@/components/blogs/AllBlogs'
 import Container from '@/components/ui/container'
 import React from 'react'
 
+export const revalidate = 60; // Odświeżaj stronę co 60 sekund
+
 function BlogPage() {
   return (
     <>

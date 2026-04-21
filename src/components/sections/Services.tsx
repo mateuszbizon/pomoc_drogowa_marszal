@@ -20,9 +20,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Truck className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Mobilny serwis TIR</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Naprawiamy ciężarówki w miejscu awarii na trasie
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Awaria układu hamulcowego</li>
+                                <li>Problemy z elektroniką</li>
+                                <li>Diagnoza komputerowa, kasowanie błędów</li>
+                                <li>Wymiana płynów eksploatacyjnych</li>
+                                <li>Naprawa systemu zawieszenia</li>
+                                <li>Tryb awaryjny ograniczanie mocy</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>
@@ -34,9 +39,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Siren className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Pomoc drogowa</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Całodobowa dostępność w Zgorzelcu i Jędrzychowicach.
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Wymiana rozrządu</li>
+                                <li>Kompleksowa wymiana filtrów i oleju</li>
+                                <li>Naprawa wydechu (tłumików)</li>
+                                <li>Wymiana klocków, tarcz hamulcowych i amortyzatorów</li>
+                                <li>Naprawa zawieszenia samochodów osobowych, dostawczych i ciężarowych</li>
+                                <li>Mobilne naprawy drobnych usterek</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>
@@ -48,9 +58,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Cog className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Naprawa kół</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Szybka wulkanizacja i wymiana opon w terenie.
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Wymiana kół na miejscu</li>
+                                <li>Wulkanizacja uszkodzonych opon</li>
+                                <li>Wyważanie kół</li>
+                                <li>Diagnoza uszkodzonych felg</li>
+                                <li>Wymiana opon ciężarowych i dostawczych</li>
+                                <li>Wulkanizacja w terenie</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>
@@ -62,9 +77,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <CarFront className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Auto laweta</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Zwieziemy każdy pojazd z miejsca awarii.
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Pojazdy ciężarowe</li>
+                                <li>Samochody osobowe</li>
+                                <li>Busy</li>
+                                <li>Samochody dostawcze</li>
+                                <li>Transport maszyn budowlanych</li>
+                                <li>W przypadku poważnych awarii, zapewniamy transport pojazdu do wybranego warsztatu lub miejsca docelowego</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>
@@ -76,9 +96,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Fan className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Serwis klimatyzacji</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Kompleksowy serwis klimatyzacji. Sprawdzanie szczelności układu chłodzenia. Uzupełnianie odczynnika.
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Napełnianie czynnika chłodzącego</li>
+                                <li>Uzupełnianie odczynnika</li>
+                                <li>Sprawdzenie szczelności układu chłodzenia</li>
+                                <li>Wymiana filtrów kabinowych</li>
+                                <li>Diagnostyka klimatyzacji</li>
+                                <li>Dezynfekcja i czyszczenie układu</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>
@@ -90,9 +115,14 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <BusFront className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Pomoc drogowa A4</h3>
-                            <p className='little-bigger-text font-medium'>
-                                Pomoc i wsparcie na autostradzie A4 o każdej porze dnia i nocy.
-                            </p>
+                            <ul className='space-y-3 md:text-lg font-medium'>
+                                <li>Wsparcie dla pojazdów osobowych, dostawczych i ciężarowych</li>
+                                <li>Awaryjne uruchamianie pojazdów</li>
+                                <li>Wymiana kół i naprawa ogumienia na miejscu</li>
+                                <li>Dowóz paliwa na trasie</li>
+                                <li>Podstawowe naprawy mechaniczne bezpośrednio na drodze</li>
+                                <li>Błyskawiczna reakcja na zgłoszenie – dostępni 24/7</li>
+                            </ul>
                             <p className='little-bigger-text text-primary font-bold mt-auto'>
                                 Dowiedz się więcej {">>"}
                             </p>

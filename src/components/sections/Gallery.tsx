@@ -1,12 +1,9 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Container from '../ui/container'
 import HeadingInfo from '../ui/heading-info'
-import LightBoxGallery from '../ui/light-box-gallery'
-import { ABOUT, TIRE_IMG, TIRE_IMG2, TRUCK_IMG, TRUCK_IMG2, TRUCK_IMG3 } from '@/constants/images'
 import { Button } from '../ui/button'
 import Link from 'next/link'
-
-const galleryImages = [ABOUT, TRUCK_IMG, TRUCK_IMG2, TRUCK_IMG3, TIRE_IMG, TIRE_IMG2]
+import RecentGalleryImages from '../blogs/RecentGalleryImages'
 
 function Gallery() {
   return (
@@ -14,7 +11,9 @@ function Gallery() {
         <Container>
             <HeadingInfo title='Galeria zdjęć' />
             <h2 className='heading2 text-center heading-margin-bottom'>Mobilny serwis TIR Zgorzelec w akcji</h2>
-            <LightBoxGallery images={galleryImages} />
+            <Suspense>
+                <RecentGalleryImages />
+            </Suspense>
             <div className='flex justify-center'>
                 <Button size={"lg"} className='mt-10' asChild>
                     <Link href={"/galeria"}>

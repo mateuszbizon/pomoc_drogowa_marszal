@@ -22,6 +22,38 @@ export type SanityImageAssetReference = {
   [internalGroqTypeReferenceTo]?: "sanity.imageAsset";
 };
 
+export type ImageGallery = {
+  _id: string;
+  _type: "imageGallery";
+  _createdAt: string;
+  _updatedAt: string;
+  _rev: string;
+  mainImage?: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  };
+};
+
+export type SanityImageCrop = {
+  _type: "sanity.imageCrop";
+  top?: number;
+  bottom?: number;
+  left?: number;
+  right?: number;
+};
+
+export type SanityImageHotspot = {
+  _type: "sanity.imageHotspot";
+  x?: number;
+  y?: number;
+  height?: number;
+  width?: number;
+};
+
 export type CategoryReference = {
   _ref: string;
   _type: "reference";
@@ -83,22 +115,6 @@ export type BlockContent = Array<
       _key: string;
     }
 >;
-
-export type SanityImageCrop = {
-  _type: "sanity.imageCrop";
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
-};
-
-export type SanityImageHotspot = {
-  _type: "sanity.imageHotspot";
-  x?: number;
-  y?: number;
-  height?: number;
-  width?: number;
-};
 
 export type Slug = {
   _type: "slug";
@@ -216,11 +232,12 @@ export type Geopoint = {
 
 export type AllSanitySchemaTypes =
   | SanityImageAssetReference
+  | ImageGallery
+  | SanityImageCrop
+  | SanityImageHotspot
   | CategoryReference
   | Post
   | BlockContent
-  | SanityImageCrop
-  | SanityImageHotspot
   | Slug
   | Category
   | SanityImagePaletteSwatch
@@ -331,6 +348,36 @@ export type GET_CATEGORY_BY_SLUG_QUERY_RESULT = {
   description?: string;
 } | null;
 
+// Source: src/sanity/lib/queries.ts
+// Variable: GET_ALL_IMAGES_QUERY
+// Query: *[_type == "imageGallery"] | order(_createdAt desc) {        _id, mainImage    }
+export type GET_ALL_IMAGES_QUERY_RESULT = Array<{
+  _id: string;
+  mainImage: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  } | null;
+}>;
+
+// Source: src/sanity/lib/queries.ts
+// Variable: GET_RECENT_IMAGES_QUERY
+// Query: *[_type == "imageGallery"] | order(_createdAt desc)[0...6] {        _id, mainImage    }
+export type GET_RECENT_IMAGES_QUERY_RESULT = Array<{
+  _id: string;
+  mainImage: {
+    asset?: SanityImageAssetReference;
+    media?: unknown;
+    hotspot?: SanityImageHotspot;
+    crop?: SanityImageCrop;
+    alt?: string;
+    _type: "image";
+  } | null;
+}>;
+
 // Query TypeMap
 import "@sanity/client";
 declare module "@sanity/client" {
@@ -339,5 +386,7 @@ declare module "@sanity/client" {
     '\n    *[_type == "post" && slug.current == $slug][0] {\n        _id, publishedAt, title, slug, categories[]->, mainImage, body\n    }  \n': GET_BLOG_BY_SLUG_QUERY_RESULT;
     '\n    *[_type == "post" && count(categories[@->slug.current == $categorySlug]) > 0] | order(publishedAt desc) {\n        _id, publishedAt, title, slug, categories[]->, mainImage\n    }\n': GET_BLOGS_BY_CATEGORY_SLUG_QUERY_RESULT;
     '\n    *[_type == "category" && slug.current == $slug][0]  \n': GET_CATEGORY_BY_SLUG_QUERY_RESULT;
+    '\n    *[_type == "imageGallery"] | order(_createdAt desc) {\n        _id, mainImage\n    }\n': GET_ALL_IMAGES_QUERY_RESULT;
+    '\n    *[_type == "imageGallery"] | order(_createdAt desc)[0...6] {\n        _id, mainImage\n    }\n': GET_RECENT_IMAGES_QUERY_RESULT;
   }
 }

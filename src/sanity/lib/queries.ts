@@ -21,3 +21,15 @@ export const GET_BLOGS_BY_CATEGORY_SLUG_QUERY = defineQuery(`
 export const GET_CATEGORY_BY_SLUG_QUERY = defineQuery(`
     *[_type == "category" && slug.current == $slug][0]  
 `)
+
+export const GET_ALL_IMAGES_QUERY = defineQuery(`
+    *[_type == "imageGallery"] | order(_createdAt desc) {
+        _id, mainImage
+    }
+`)
+
+export const GET_RECENT_IMAGES_QUERY = defineQuery(`
+    *[_type == "imageGallery"] | order(_createdAt desc)[0...6] {
+        _id, mainImage
+    }
+`)

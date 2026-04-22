@@ -6,8 +6,6 @@ import Link from 'next/link'
 import { PHONE2 } from '@/constants'
 import AllGalleryImages from '../blogs/AllGalleryImages'
 
-export const revalidate = 60
-
 function GalleryFull() {
   return (
     <section className='bg-white py-section-padding'>

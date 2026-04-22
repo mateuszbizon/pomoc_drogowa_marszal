@@ -6,6 +6,8 @@ import Questions from "@/components/sections/Questions";
 import Reviews from "@/components/sections/Reviews";
 import Services from "@/components/sections/Services";
 
+export const revalidate = 60
+
 export default function Home() {
   return (
     <>

@@ -6,7 +6,7 @@ import { PHONE, PHONE2 } from '@/constants'
 
 function CompanyInfo() {
   return (
-    <div className='bg-secondary py-3 fixed w-full top-0 h-company-info-height z-40'>
+    <div className='bg-secondary py-3 fixed lg:hidden w-full top-0 h-company-info-height z-40'>
         <Container>
             <div className='h-full flex items-center gap-5 lg:gap-8'>
                 <Button size={"link"} variant={"link"} className='text-foreground hover:text-white text-lg lg:text-xl' asChild>

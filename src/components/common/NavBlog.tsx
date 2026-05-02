@@ -11,17 +11,25 @@ import NavCard from '../cards/NavCard'
 import Image from 'next/image'
 import { LOGO } from '@/constants/images'
 import NavMobile from './NavMobile'
+import { Phone } from 'lucide-react'
 
 function NavBlog() {
   return (
-    <nav className={`h-nav-height fixed top-company-info-height w-full bg-foreground z-40 transition duration-300 py-5`}>
+    <nav className={`h-nav-min-height lg:h-nav-height fixed top-company-info-height lg:top-0 w-full bg-foreground z-40 transition duration-300 py-5`}>
         <Container>
             <div className='flex justify-between items-center h-full'>
-                <div className='h-full'>
+                <div className='h-full flex gap-5'>
                     <Link href={"/"} title='Strona główna'>
-                        <figure className='relative w-50 h-full'>
+                        <figure className='relative w-50 h-10'>
                             <Image src={LOGO.src} alt={LOGO.alt} fill />
                         </figure>
+                    </Link>
+                    <Link href={`tel:${PHONE2}`} className='text-white hidden lg:flex flex-col items-center'>
+                        <span className='uppercase little-bigger-text font-semibold'>zadzwoń do nas</span>
+                        <div className='flex items-center gap-4'>
+                            <Phone className='size-7' />
+                            <span className='heading3'>{PHONE2}</span>
+                        </div>
                     </Link>
                 </div>
                 <div className='hidden lg:flex'>
@@ -34,11 +42,11 @@ function NavBlog() {
                             ))}
                         </NavigationMenuList>
                     </NavigationMenu>
-                    <Button className='ml-2' asChild>
+                    {/* <Button className='ml-2' asChild>
                         <Link href={`tel:${PHONE2}`}>
                             Zadzwoń do nas
                         </Link>
-                    </Button>
+                    </Button> */}
                 </div>
                 <div className='lg:hidden'>
                     <NavMobile />

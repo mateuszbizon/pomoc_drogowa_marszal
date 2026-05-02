@@ -16,6 +16,7 @@
   --spacing-section-padding: var(--section-padding);
   --spacing-company-info-height: var(--company-info-height);
   --spacing-nav-height: var(--nav-height);
+  --spacing-nav-min-height: var(--nav-min-height);
 }
 
 :root {
@@ -31,7 +32,8 @@
   --border: #2601df;
   --section-padding: 5rem;
   --company-info-height: 3rem;
-  --nav-height: 5rem;
+  --nav-height: 6.5rem;
+  --nav-min-height: 5rem;
 }
 
 @layer base {

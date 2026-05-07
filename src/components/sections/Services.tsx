@@ -20,7 +20,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Truck className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Mobilny serwis TIR</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Awaria układu hamulcowego</li>
                                 <li>Problemy z elektroniką</li>
                                 <li>Diagnoza komputerowa, kasowanie błędów</li>
@@ -39,7 +39,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Siren className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Pomoc drogowa</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Wymiana rozrządu</li>
                                 <li>Kompleksowa wymiana filtrów i oleju</li>
                                 <li>Naprawa wydechu (tłumików)</li>
@@ -58,7 +58,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Cog className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Naprawa kół</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Wymiana kół na miejscu</li>
                                 <li>Wulkanizacja uszkodzonych opon</li>
                                 <li>Wyważanie kół</li>
@@ -77,7 +77,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <CarFront className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Auto laweta</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Pojazdy ciężarowe</li>
                                 <li>Samochody osobowe</li>
                                 <li>Busy</li>
@@ -96,7 +96,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <Fan className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Serwis klimatyzacji</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Napełnianie czynnika chłodzącego</li>
                                 <li>Uzupełnianie odczynnika</li>
                                 <li>Sprawdzenie szczelności układu chłodzenia</li>
@@ -115,7 +115,7 @@ function Services() {
                         <div className='flex flex-col items-center gap-5 text-center'>
                             <BusFront className='text-primary size-10' />
                             <h3 className='bigger-text font-bold'>Pomoc drogowa A4</h3>
-                            <ul className='space-y-3 md:text-lg font-medium'>
+                            <ul className='space-y-3 little-bigger-text font-medium'>
                                 <li>Wsparcie dla pojazdów osobowych, dostawczych i ciężarowych</li>
                                 <li>Awaryjne uruchamianie pojazdów</li>
                                 <li>Wymiana kół i naprawa ogumienia na miejscu</li>
